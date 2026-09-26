@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-    --color-brand: oklch(55% 0.18 265);
-    --radius-card: 0.75rem;
+    --color-brand: oklch(55% 0.07 208);
+    --radius-card: 1rem;
 }
 
 @utility focus-ring {
-    @apply focus-visible:outline-hidden focus-visible:ring-4 focus-visible:ring-brand/50;
+    @apply focus-visible:outline-hidden focus-visible:ring-4 focus-visible:ring-brand/75;
 }
 
 @utility btn-primary {
