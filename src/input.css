@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@theme {
+    --color-brand: oklch(55% 0.18 265);
+    --radius-card: 0.75rem;
+}
+
+@utility focus-ring {
+    @apply focus-visible:outline-hidden focus-visible:ring-4 focus-visible:ring-brand/50;
+}
+
+@utility btn-primary {
+    @apply focus-ring block rounded-sm bg-brand px-4 py-2 text-center font-semibold text-white;
+    &:hover {
+        @apply brightness-110;
+    }
+}
+
+@utility card {
+    @apply rounded-card bg-white p-6 shadow-sm transition duration-300 dark:bg-slate-800;
+    &:hover {
+        @apply -translate-y-1 shadow-lg;
+    }
+}
