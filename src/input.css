@@ -10,14 +10,14 @@
 }
 
 @utility btn-primary {
-    @apply focus-ring block rounded-sm bg-brand px-4 py-2 text-center font-semibold text-white;
+    @apply focus-ring block rounded-sm bg-brand px-4 py-2 text-center font-semibold text-amber-50;
     &:hover {
         @apply brightness-110;
     }
 }
 
 @utility card {
-    @apply rounded-card bg-white p-6 shadow-sm transition duration-300 dark:bg-slate-800;
+    @apply rounded-card bg-amber-50 p-6 shadow-sm transition duration-300 dark:bg-amber-700;
     &:hover {
         @apply -translate-y-1 shadow-lg;
     }
